@@ -1,0 +1,140 @@
+<!-- أعتذر على التأخير ولكن وجب عليّ إرسال المهمة لأجل المتطلب الجامعي حتى لو بعد انتهاء الوقت :(  -->
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="cssFile.css">
+    <title>Task_1 MOTORS</title>
+    <script src="javaQ.js"></script>
+</head>
+
+<body>
+
+    <h1> Arm Control Panel</h1>
+
+
+    <p>المحرك الأول</p>
+
+    <div class="range">
+
+
+        <div class="sliderValue">
+            <span>90</span>
+        </div>
+        <div class="field">
+            <div class="value left">0</div>
+            <input type="range" min="0" max="180" value="90">
+            <div class="value right">180</div>
+        </div>
+    </div>
+
+
+    <p>المحرك الثاني</p>
+
+    <div class="range">
+        <div class="sliderValue">
+            <span>90</span>
+        </div>
+        <div class="field">
+            <div class="value left">
+                0</div>
+            <input type="range" min="0" max="180" value="90">
+            <div class="value right">
+                180</div>
+        </div>
+    </div>
+
+
+    <p>المحرك الثالث</p>
+
+    <div class="range">
+        <div class="sliderValue">
+            <span>90</span>
+        </div>
+        <div class="field">
+            <div class="value left">
+                0</div>
+            <input type="range" min="0" max="180" value="90">
+            <div class="value right">180</div>
+        </div>
+    </div>
+
+
+    <p>المحرك الرابع</p>
+
+    <div class="range">
+        <div class="sliderValue">
+            <span>90</span>
+        </div>
+        <div class="field">
+            <div class="value left">
+                0</div>
+            <input type="range" min="0" max="180" value="90">
+            <div class="value right">
+                180</div>
+        </div>
+    </div>
+
+
+    <p>المحرك الخامس</p>
+
+    <div class="range">
+        <div class="sliderValue">
+            <span>90</span>
+        </div>
+        <div class="field">
+            <div class="value left">
+                0</div>
+            <input type="range" min="0" max="180" value="90">
+            <div class="value right">
+                180</div>
+        </div>
+    </div>
+
+
+    <p>المحرك السادس</p>
+
+    <div class="range">
+        <div class="sliderValue">
+            <span>90</span>
+        </div>
+        <div class="field">
+            <div class="value left">
+                0</div>
+            <input type="range" min="0" max="180" value="90">
+            <div class="value right">
+                180</div>
+        </div>
+    </div>
+
+    <br> </br>
+    <button type="button" class="button" onclick="alert('تم حفظ البيانات')"> حفظ </button>
+    <button type="button" class="button" onclick="alert('تم تشغيل البيانات')"> تشغيل </button>
+    <br> </br>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('input[type="range"]').on('input', function() {
+                var bubble = $(this).parent().parent().find('.sliderValue span');
+                bubble.text($(this).val());
+                bubble.addClass('show');
+                bubble.css('left', $(this).val() / 2 + '%');
+            });
+
+            $('input[type="range"]').on('blur', function() {
+                $(this).parent().parent().find('.sliderValue span').removeClass('show');
+            });
+
+        });
+    </script>
+
+
+</body>
+
+
+</html>
