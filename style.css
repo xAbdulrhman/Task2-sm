@@ -1,0 +1,74 @@
+h1 {
+    color: #54b1e7;
+    background-color: rgb(68, 68, 68);
+    font-size: 24px;
+    text-align: center;
+    border: 2px groove rgb(128, 1, 128)
+}
+
+body {
+    color: rgb(128, 1, 128);
+    text-align: center;
+    border: 4px;
+    border-style: solid;
+    height: 100%;
+    place-items: center;
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Desktop-Wallpaper-HD-3D-Full-Screen-Free-Download.jpg) no-repeat;
+}
+
+div {
+    background-color: rgb(68, 68, 68);
+    height: 400px;
+    place-items: center;
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Desktop-Wallpaper-HD-3D-Full-Screen-Free-Download.jpg) no-repeat;
+}
+
+.button {
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2a6e96;
+    padding: 20px;
+    display: inline-block;
+    border: 50%;
+    transition: all 0.4s ease 0s;
+}
+
+.button:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-orient: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.btn:hover::after {
+    top: 0px;
+    left: 0px;
+}
